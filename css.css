@@ -1,0 +1,148 @@
+@charset "utf-8";
+/* CSS Document */
+
+* {
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+}
+
+body {
+	background-color: #323232;
+}
+
+/* Navigation Menu - by Mikkel Christensen / Microbex@gmail.com */
+nav {
+	z-index: 1;
+	position: fixed;
+	width: 100%;
+	height: 100px;
+	background-color:rgba(22,22,22,1.00);
+	box-shadow: 0px 5px 30px 0px rgba(0,0,0,.35);
+	overflow-y: hidden;
+	
+}
+
+ul {
+	margin-left: 7px;
+	
+}
+
+ul li {
+	list-style: none; /*fjerner deafult underscore*/
+	display: inline-block; /*sætter menupunkter verticalt*/
+	float: left; /*fjerner unødig spacing imellem menupunkter*/
+	line-height: 98px;
+	
+}
+
+ul li a {
+	display: block; /*gør hele blokken klikbar*/
+	width: 130px;
+	font-family: arial;
+	text-align: center;
+	color: orangered;
+	text-shadow: 0px 0px 0px rgba(0,0,0,0);
+	background-image: linear-gradient(rgba(22,22,22,1), rgba(22,22,22,1));
+	border-bottom: 3px solid rgba(22,22,22,1);
+	/*border-left: inset 1px rgba(0,0,0,.50);*/
+	/*border-right: inset 1px rgba(0,0,0,.30);*/
+}
+
+.orangered {
+	font-size: 20px;
+	border-right: inset 1px rgba(0,0,0,.30);
+	text-shadow: 2px 2px 0px rgba(0,0,0,.50);
+	color: rgba(128,128,128,1.00);
+	transition: font-size .25s, color .5s;
+}
+
+.orangered:hover {
+	font-size: 25px;
+	color: white;
+	text-shadow: 0px 0px 10px rgba(253,106,52,1.00);
+	background-image: linear-gradient(rgba(22,22,22,1), rgba(255,69,0,.40));
+	border-bottom: 3px solid rgba(255,69,0,1.00);
+	box-shadow: inset 8px 8px 30px 0px rgba(0,0,0,.5);
+}
+
+.magenta {
+	font-size: 20px;
+	border-right: inset 1px rgba(0,0,0,.30);
+	text-shadow: 2px 2px 0px rgba(0,0,0,.50);
+	color: rgba(128,128,128,1.00);
+	transition: font-size .25s, color .5s;
+}
+
+.magenta:hover {
+	font-size: 25px;
+	color: white;
+	text-shadow: 0px 0px 10px rgba(255,0,255,1);
+	background-image: linear-gradient(rgba(22,22,22,1), rgba(255,0,255,.4));
+	border-bottom: 3px solid rgba(255,0,255,1);
+	box-shadow: inset 8px 8px 30px 0px rgba(0,0,0,.5);
+}
+
+.blue {
+	font-size: 20px;
+	border-right: inset 1px rgba(0,0,0,.30);
+	text-shadow: 2px 2px 0px rgba(0,0,0,.50);
+	color: rgba(128,128,128,1.00);
+	transition: font-size .25s, color .5s;
+}
+
+.blue:hover {
+	font-size: 25px;
+	color: white;
+	text-shadow: 0px 0px 10px rgba(86,138,250,1.00);
+	background-image: linear-gradient(rgba(22,22,22,1), rgba(0,70,220,.40));
+	border-bottom: 3px solid rgba(0,70,220,1.00);
+	box-shadow: inset 8px 8px 30px 0px rgba(0,0,0,.5);
+}
+
+.green {
+	font-size: 20px;
+	border-right: inset 1px rgba(0,0,0,.30);
+	text-shadow: 2px 2px 0px rgba(0,0,0,.50);
+	color: rgba(128,128,128,1.00);
+	transition: font-size .25s, color .5s;
+}
+
+.green:hover {
+	font-size: 25px;
+	color: white;
+	text-shadow: 0px 0px 10px rgba(0,219,14,1.00);
+	background-image: linear-gradient(rgba(22,22,22,1), rgba(0,219,14,.40));
+	border-bottom: 3px solid rgba(0,219,14,1.00);
+	box-shadow: inset 8px 8px 30px 0px rgba(0,0,0,.5);
+}
+
+.genskind {
+	z-index: 2;
+	position: relative; top: 0; left: 0;
+	margin: 0 7px;
+	border-radius: 10px;
+	pointer-events: none; /* ignorere 'hitbox' */
+	/*background-image: linear-gradient(rgba(180,180,255,0.2), rgba(0,0,0,0));*/
+	background-image: linear-gradient(rgba(0,0,0,0), rgba(150,200,255,.08));
+	height: 47px;
+	
+}
+/* Navigations Menu slut - det tog også kun ca. 9+ timer at lave..jeesh :-) */
+
+/* tests*/
+p {
+	font-size: 20px;
+	
+}
+
+
+article p {
+	margin-top: 120px;
+	column-count: 5;
+	column-gap: 50px;
+	column-fill: auto;
+	color: white;
+	padding: 40px 40px;
+	
+}
